@@ -1,5 +1,5 @@
 .ids__inline-gallery {
-  --img-aspect-ratio: 4/2.5;
+  --img-aspect-ratio: 128/72;
   display: grid;
   gap: 0.2em;
   position: relative;
