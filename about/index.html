@@ -1,0 +1,114 @@
+<!-- Шаблон, в который передаются данные страниц при создании финального ХТМЛ-кода сайта  -->
+
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Подставляем в название вкладки и описание значения переменных, если они заданы на страницах. Если нет — используем значения по умолчанию -->
+  <title>Люди</title>
+  <meta name="description" content="Р&amp;К — передовое рекламное агентство по рекламе всего и даже чуть большего">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/ids.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/promo-block.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/settings.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body class="ids">
+  <div class="debugger">
+    <div class="debugger-cols">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="layoutContainer">
+
+    <!-- Подключаем includes/header.html -->
+    <!-- Описываем пункты меню как массив в переменной. Внимательнее с запятыми -->
+
+
+<header class="header">
+  
+  <a class="logo" href="../">
+    <div class="header-logo">
+      <img class="header-logo-image" src="../assets/images/avatar.jpg" alt="Валерий Дмитриев">
+      <!-- <a class="header-logo-name" href="../">На главную</a> -->
+    </div>
+  </a>
+  
+
+  <button class="burger-menu" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav">
+    <div class="menu">
+      
+      <a class="button M" target="_blank" rel="noopener noreferrer" href="https://t.me/dmivaleriy">Телеграм</a>
+      <a class="button M" target="_blank" rel="noopener noreferrer" href="mailto:dmivaleriy@ya.ru">Почта</a>
+    </div>
+  </nav>
+</header>
+
+    <!-- Подключаем содержимое block content каждой страницы, использующей этот шаблон  -->
+    <div class="content">
+      
+  <!-- Пример использования переменной -->
+  <h1>Люди</h1>
+  <p>Направленный маркетинг, однако, означает ролевой феномен толпы. Механизм власти, тем более в условиях социально-экономического кризиса, категорически отчуждает опасный коллапс Советского Союза.</p>
+  <p>Политическая социализация отражает индивидуальный направленный маркетинг. Бессознательное, особенно в условиях политической нестабильности, верифицирует плюралистический субъект власти, что отмечают такие крупнейшие ученые как Фрейд, Адлер, Юнг, Эриксон, Фромм. Политическое манипулирование представляет собой культурный рейтинг. Интроекция доказывает бихевиоризм.</p>
+
+    </div>
+
+    <!-- Подключаем includes/footer.html -->
+    
+<div class="ids__wrapper">
+  <div class="ids__space M"></div>
+  <!--   <div style="border-top: 1px solid rgba(var(--ids__text-RGB), 0.15); margin: 1rem 0; "></div> -->
+
+  <div class="ids__text-width">
+    <!-- <p style="opacity: 0.5;">Валерий Дмитриев, 2026</p> -->
+  </div>
+  <div class="ids__space M"></div>
+</div>
+
+
+<footer class="footer">
+  <!-- <small>Футер</small> -->
+</footer>
+
+  </div>
+
+  <script src="../script.js" defer></script>
+  <script src="../js/grid.js" defer></script>
+  <script src="../js/promo-block.js"></script>
+  <script src="../js/sleepy.js"></script>
+  <!-- <script src="../js/navbar.js"></script> -->
+</body>
+
+</html>

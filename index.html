@@ -1,0 +1,424 @@
+<!-- Шаблон, в который передаются данные страниц при создании финального ХТМЛ-кода сайта  -->
+
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Подставляем в название вкладки и описание значения переменных, если они заданы на страницах. Если нет — используем значения по умолчанию -->
+  <title>Дизайнер Валерий Дмитриев</title>
+  <meta name="description" content="Р&amp;К — передовое рекламное агентство по рекламе всего и даже чуть большего">
+
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/ids.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/promo-block.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/settings.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body class="ids">
+  <div class="debugger">
+    <div class="debugger-cols">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="layoutContainer">
+
+    <!-- Подключаем includes/header.html -->
+    <!-- Описываем пункты меню как массив в переменной. Внимательнее с запятыми -->
+
+
+<header class="header">
+  
+  <div class="logo">
+    <div class="header-logo">
+      <img class="header-logo-image" src="assets/images/avatar.jpg" alt="Валерий Дмитриев">
+      <!-- <a class="header-logo-name" href="">Валерий Дмитриев</a> -->
+    </div>
+  </div>
+  
+
+  <button class="burger-menu" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav">
+    <div class="menu">
+      
+      
+      
+      <a class="menu-item" href="#projects">Портфолио</a>
+      
+      
+      
+      <a class="menu-item" href="#cv">CV</a>
+      
+      
+      
+      <a class="button M" target="_blank" rel="noopener noreferrer" href="https://t.me/dmivaleriy">Телеграм</a>
+      <a class="button M" target="_blank" rel="noopener noreferrer" href="mailto:dmivaleriy@ya.ru">Почта</a>
+    </div>
+  </nav>
+</header>
+
+    <!-- Подключаем содержимое block content каждой страницы, использующей этот шаблон  -->
+    <div class="content">
+      
+
+<div class="ids__space M"></div>
+<div class="ids__wrapper">
+  <div class="ids__text-width" style="width: 100%;">
+    <p lang="ru" ; class="loud">Привет! Я — Валерий Дмитриев, дизайнер.</p>
+  </div>
+</div>
+
+
+<!-- Projects -->
+<ids-nav-item id="projects" label="Проекты"></ids-nav-item>
+<div class="ids__wrapper">
+  <div class="ids__space S"></div>
+  <!-- <h1>Проекты</h1> -->
+
+
+  <!--   
+  
+  
+  <div class="ids__sequence-item">
+  <div class="ids__inline-gallery">
+    
+    <video style="border-radius: var(--ids__radius); overflow: hidden;" autoplay loop muted>
+      <source src="./assets/images/projects/parking/parking-cover.mp4" type="video/mp4">
+    </video>
+    
+
+    
+    <a class="project-link" href="./plates/">
+      <strong>Инфостенды ижевских парковок<span style="display: inline-block; transform: rotate(-45deg); opacity: 1;">→</span></strong>
+    </a>
+    
+  </div>
+</div>
+  <div class="ids__space S"></div> -->
+
+
+  
+  
+  
+  <div class="ids__sequence-item">
+  <div class="ids__inline-gallery">
+    
+    <video style="border-radius: var(--ids__radius); overflow: hidden;" autoplay loop muted>
+      <source src="assets/images/projects/izh-parking/izh-parking-cover.mp4" type="video/mp4">
+    </video>
+    
+
+    
+    <a class="project-link" href="izh-parking/">
+      <strong>Инфостенды ижевских парковок<span style="display: inline-block; transform: rotate(-45deg); opacity: 1;">→</span></strong>
+    </a>
+    
+  </div>
+</div>
+  <div class="ids__space S"></div>
+  <div class="ids__sequence XL gap-L">
+    
+    
+    
+    <div class="ids__sequence-item">
+  <div class="ids__inline-gallery">
+    
+    
+    <img src="assets/images/inline-gallery/cover-sequence/cover-3.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-4.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-5.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    
+
+    
+    <a class="project-link" href="">
+      <strong>Генератор адресных табличек<span style="display: inline-block; transform: rotate(-45deg); opacity: 1;">→</span></strong>
+    </a>
+    
+  </div>
+</div>
+
+    
+    
+    
+    <div class="ids__sequence-item">
+  <div class="ids__inline-gallery">
+    
+    
+    <img src="assets/images/inline-gallery/cover-sequence/cover-3.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-4.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-5.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    
+
+    
+    <a class="project-link" href="">
+      <strong>Сайт-портфолио дизайнера<span style="display: inline-block; transform: rotate(-45deg); opacity: 1;">→</span></strong>
+    </a>
+    
+  </div>
+</div>
+  </div>
+  <div class="ids__sequence XL gap-L">
+    
+    
+    
+    <div class="ids__sequence-item">
+  <div class="ids__inline-gallery">
+    
+    
+    <img src="assets/images/inline-gallery/cover-sequence/cover-3.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-4.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-5.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    
+
+    
+    <a class="project-link" href="">
+      <strong>Генератор адресных табличек<span style="display: inline-block; transform: rotate(-45deg); opacity: 1;">→</span></strong>
+    </a>
+    
+  </div>
+</div>
+
+    
+    
+    
+    <div class="ids__sequence-item">
+  <div class="ids__inline-gallery">
+    
+    
+    <img src="assets/images/inline-gallery/cover-sequence/cover-3.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-4.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-5.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    
+
+    
+    <a class="project-link" href="">
+      <strong>Сайт-портфолио дизайнера<span style="display: inline-block; transform: rotate(-45deg); opacity: 1;">→</span></strong>
+    </a>
+    
+  </div>
+</div>
+  </div>
+
+
+  <div class="ids__space S"></div>
+  <a class="button P" href="projects/">Посмотреть все</a>
+</div>
+<!-- Projects -->
+
+<!-- Interesting -->
+<div class="ids__space L"></div>
+
+<div class="ids__wrapper">
+  <div class="ids__text-width">
+    <p lang="ru" ; class="loud" id="interesting">Люблю проекты с большой долей изобрета&shy;тельства и слож&shy;ными
+      техничес&shy;кими
+      задачами. <!-- Делаю <a style="text-decoration-thickness: .0625em;" href="/projects/#web">сайты</a>, <a
+        style="text-decoration-thickness: .0625em;" href="/projects/#infographics">
+        презентации и инфо&shy;графику</a>, проектирую <a style="text-decoration-thickness: .0625em;"
+        href="/projects/#navigation">навигацию</a>, <a style="text-decoration-thickness: .0625em;"
+        href="/projects/#automation">
+        автоматизирую
+        дизайн</a>. -->
+    </p>
+  </div>
+  <div class="ids__space S"></div>
+</div>
+<!-- Interesting -->
+
+<!-- Other -->
+<div class="ids__wrapper">
+  <div class="ids__sequence L gap-L">
+    
+    
+    <div class="ids__sequence-item">
+  <div class="ids__inline-gallery">
+    
+    
+    <img src="assets/images/inline-gallery/cover-sequence/cover-3.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-4.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-5.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    
+
+    
+  </div>
+</div>
+
+    
+    
+    <div class="ids__sequence-item">
+  <div class="ids__inline-gallery">
+    
+    
+    <img src="assets/images/inline-gallery/cover-sequence/cover-3.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-4.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-5.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    
+
+    
+  </div>
+</div>
+
+    
+    
+    <div class="ids__sequence-item">
+  <div class="ids__inline-gallery">
+    
+    
+    <img src="assets/images/inline-gallery/cover-sequence/cover-3.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-4.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-5.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    
+
+    
+  </div>
+</div>
+
+    
+    
+    <div class="ids__sequence-item">
+  <div class="ids__inline-gallery">
+    
+    
+    <img src="assets/images/inline-gallery/cover-sequence/cover-3.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-4.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    <img src="assets/images/inline-gallery/cover-sequence/cover-5.png"
+      style="border-radius: var(--ids__radius); overflow: hidden;">
+    
+
+    
+  </div>
+</div>
+  </div>
+</div>
+<div class="ids__space L"></div>
+
+</div>
+<!-- Other -->
+
+<!-- CV -->
+<ids-nav-item id="cv" label="CV"></ids-nav-item>
+<div class="ids__wrapper CV">
+  <h1>Кратко обо мне</h1>
+  <div class="ids__text-width">
+    <h4 class="cv">Опыт работы</h4>
+    <p class="cv">Студия Артемия Лебедева,
+      <span class="cv" style="opacity: 0.25;">2024–2025</span>
+      <!-- <p class="competence-description">Описание работы</p> -->
+    </p>
+
+    <p class="cv">Центр территориального развития Удмуртии,
+      <span class="cv" style="opacity: 0.25;">2022–2024</span>
+      <!-- <p class="competence-description">Описание работы</p> -->
+    </p>
+
+    <div class="ids__space S"></div>
+    <h4 class="cv">Навыки, инструменты и технологии</h4>
+    <p class="cv">Фигма, Иллюстратор, Индизайн, Фотошоп, HTML, CSS, JavaScript, VS Code, 11ty</p>
+
+    <div class="ids__space S"></div>
+    <h4 class="cv">Образование и курсы</h4>
+    <p class="cv">Фантастические сайты на яваскрипте,
+      <span class="cv" style="opacity: 0.25;">школа «Сетка», 2025</span>
+    </p>
+    <p class="cv">Дизайн кодом,
+      <span class="cv" style="opacity: 0.25;">Женя Арутюнов, 2024</span>
+    </p>
+    <p class="cv">Курс по верстке таблиц,
+      <span class="cv" style="opacity: 0.25;">Игорь Штанг, 2023</span>
+    </p>
+    <p class="cv">Подготовительные курсы,
+      <span class="cv" style="opacity: 0.25;">бюро Горбунова, 2022</span>
+    </p>
+  </div>
+
+  </ids-nav-item>
+  <div class="ids__space M"></div>
+  <p lang="ru" ; class="loud"><a style="text-decoration-thickness: .0625em;"
+      href="assets/pdfs/test-cv.pdf">Скачать
+      CV</a></p>
+  <!-- <div class="ids__space L"></div> -->
+</div>
+<!-- CV -->
+
+
+
+    </div>
+
+    <!-- Подключаем includes/footer.html -->
+    
+<div class="ids__wrapper">
+  <div class="ids__space M"></div>
+  <!--   <div style="border-top: 1px solid rgba(var(--ids__text-RGB), 0.15); margin: 1rem 0; "></div> -->
+
+  <div class="ids__text-width">
+    <!-- <p style="opacity: 0.5;">Валерий Дмитриев, 2026</p> -->
+  </div>
+  <div class="ids__space M"></div>
+</div>
+
+
+<footer class="footer">
+  <!-- <small>Футер</small> -->
+</footer>
+
+  </div>
+
+  <script src="script.js" defer></script>
+  <script src="js/grid.js" defer></script>
+  <script src="js/promo-block.js"></script>
+  <script src="js/sleepy.js"></script>
+  <!-- <script src="js/navbar.js"></script> -->
+</body>
+
+</html>

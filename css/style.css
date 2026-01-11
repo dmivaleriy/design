@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "VelaSans";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("../assets/fonts/VelaSans-GX.ttf") format("truetype-variations");
+}
+
+:root {
+  --textColor: #282828;
+  --backgroundColor: rgba(247, 247, 247, .8);
+  --keyColor: #00b2ff;
+  --linkColor: var(--textColor);
+  --linkUnderlineColor: color-mix(in srgb, var(--keyColor) 50%, rgba(255, 255, 255, 0));
+}
+
+body {
+  font: 1em/1.25;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  font-family: "VelaSans";
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+}
+
+a {
+  color: var(--linkColor);
+  text-decoration: underline;
+  text-decoration-color: var(--linkUnderlineColor);
+  text-decoration-thickness: .0625em;
+  text-underline-offset: 0.25em;
+}
+
+a:hover {
+  color: var(--keyColor);
+}
+
+.layoutContainer {
+  padding: .5rem clamp(1.43rem, 2.5vw, 2.84rem) 3rem;
+}
+
+.header {
+  font-size: 1.5rem;
+  display: grid;
+  /* position: fixed; */
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header-logo {
+  /* font-size: 1.1em; */
+  /* font-weight: 600; */
+  display: flex;
+  align-items: center;
+  order: 1;
+}
+
+.header-logo-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 1.75em;
+  height: 1.75em;
+  margin-right: 1em;
+  fill: var(--keyColor);
+}
+
+.nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: end;
+  column-gap: 1em;
+}
+
+.lead {
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+.lead p {
+  max-width: 18em;
+}
+
+.img {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about {
+  margin-top: 5vh;
+}
+
+@media (width < 768px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 1.25rem;
+  }
+
+  .nav {
+    column-gap: 1.5em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --textColor: #fff;
+    --backgroundColor: #0f0f0f;
+  }
+}
