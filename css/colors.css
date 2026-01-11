@@ -6,8 +6,8 @@
   --ids__code-RGB: 115, 120, 125;
   --ids__mark-RGB: 255, 225, 0;
   --ids__surface-RGB: 238, 240, 242;
-  --ids__background-RGB: 255, 255, 255;
-  /* --ids__background-RGB: 243, 245, 244; */
+  /* --ids__background-RGB: 255, 255, 255; */
+  --ids__background-RGB: 243, 245, 244;
 }
 
 body {

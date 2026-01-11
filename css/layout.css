@@ -60,7 +60,9 @@
   }
 
   &.CV {
+    width: 100%;
     background-color: rgba(var(--ids__text-RGB), 0.035);
+    text-align: center;
     padding: 1.5em 2em 0.25em 2em;
     /* margin-bottom: 1em; */
     /* border-radius: var(--ids__radius); */
@@ -140,10 +142,10 @@
 
   &.L {
     .ids__sequence-item {
-      --columns: 4;
+      --columns: 3;
 
       @media (width < 767px) {
-        --columns: 2;
+        --columns: 1;
       }
     }
   }
